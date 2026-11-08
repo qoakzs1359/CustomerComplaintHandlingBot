@@ -1,4 +1,4 @@
-# 中通快递投诉自动化机器人
+# 快递投诉自动化机器人
 
 面向快递投诉场景的 AI Agent：自动与快递在线客服多轮沟通（追进度、索要赔偿），解决"投诉流程长、人工盯不住、易被模板化敷衍"的痛点。
 
@@ -78,7 +78,7 @@ copy zto_bot\.env.example zto_bot\.env
 # 2. 填入真实值
 #    DEEPSEEK_API_KEY  → https://platform.deepseek.com 申请
 #    DIFY_API_KEY      → 本地 Dify 应用的 API Key
-#    KF_FULL_URL(zto_bot) → 登录中通官网后复制客服页完整地址（约2小时有效）
+#    KF_FULL_URL(zto_bot) → 登录官网后复制客服页完整地址（约2小时有效）
 ```
 
 ### 运行
@@ -88,7 +88,7 @@ copy zto_bot\.env.example zto_bot\.env
 python complaint_bot/mock_server.py          # 终端1：启动模拟客服 (localhost:5001)
 python complaint_bot/bot.py                  # 终端2：启动机器人
 
-# 方式二：真实中通客服页面（需在 .env 配置 KF_FULL_URL）
+# 方式二：真实客服页面（需在 .env 配置 KF_FULL_URL）
 python zto_bot/main.py                       # 图形界面版
 ```
 
